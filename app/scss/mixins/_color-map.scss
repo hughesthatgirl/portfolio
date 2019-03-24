@@ -1,0 +1,10 @@
+// ------------------------------------------
+// Color Map
+//
+// Example: {color: color(pink);}
+// ------------------------------------------
+@function color($color){
+    @if map-has-key($colors, $color){
+        @return map-get($colors, $color);
+    } 
+}

@@ -41,3 +41,65 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+body {
+  font-family: "Nanum Gothic Coding", monospace; }
+
+h1 {
+  font-family: "Berkshire Swash", cursive; }
+
+h2 {
+  font-family: "Berkshire Swash", cursive; }
+
+h3 {
+  font-family: "Berkshire Swash", cursive; }
+
+h4 {
+  font-family: "Berkshire Swash", cursive; }
+
+h5 {
+  font-family: "Berkshire Swash", cursive; }
+
+h6 {
+  font-family: "Berkshire Swash", cursive; }
+
+ul {
+  list-style: none; }
+
+h1 + * {
+  margin-top: calc(8px * 2); }
+
+h2 + * {
+  margin-top: calc(8px * 2); }
+
+h3 + * {
+  margin-top: calc(8px * 2); }
+
+h4 + * {
+  margin-top: calc(8px * 2); }
+
+h5 + * {
+  margin-top: calc(8px * 2); }
+
+h6 + * {
+  margin-top: calc(8px * 2); }
+
+.layout-spacer {
+  padding-top: calc(8px * 4);
+  padding-bottom: calc(8px * 4); }
+
+.layout-row {
+  padding-left: calc(8px * 3);
+  padding-right: calc(8px * 3);
+  width: auto;
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.layout-container + .layout-container {
+  margin-top: calc(8px * 3); }
+
+.layout-container > * + * {
+  margin-top: calc(8px * 3); }
+
+.layout-standard-list li + li {
+  margin-top: 8px; }

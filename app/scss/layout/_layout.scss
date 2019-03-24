@@ -1,0 +1,30 @@
+.layout {
+    &-spacer {
+        padding-top: $base_x_4;
+        padding-bottom: $base_x_4;
+    }
+
+    &-row {
+        padding-left: $base_x_3;
+        padding-right: $base_x_3;
+        width: auto;
+        max-width: row-width(base);
+        margin: 0 auto;
+    }
+
+    &-container {
+        + .layout-container {
+            margin-top: $base_x_3;
+        }
+
+        > * + * {
+            margin-top: $base_x_3;
+        }
+    }
+
+    &-standard-list {
+        li + li {
+            margin-top: $base_spacing;
+        }
+    }
+}

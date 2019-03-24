@@ -11,6 +11,22 @@ $colors: (
 );
 
 // ------------------------------------------
+// Fonts
+// ------------------------------------------
+$serif: 'Berkshire Swash', cursive;
+$mono: 'Nanum Gothic Coding', monospace;
+
+// ------------------------------------------
+// Spacing
+// ------------------------------------------
+$base_spacing: 8px;
+$half_spacing: calc(#{$base_spacing} / 2); //4px
+$base_x_2: calc(#{$base_spacing} * 2); //16px
+$base_x_3: calc(#{$base_spacing} * 3); //24px
+$base_x_4: calc(#{$base_spacing} * 4); //32px
+$base_x_5: calc(#{$base_spacing} * 5); //40px
+
+// ------------------------------------------
 // Breakpoints
 // ------------------------------------------
 $breakpoints: (

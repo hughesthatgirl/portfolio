@@ -1,0 +1,16 @@
+// font-family: 'Berkshire Swash', cursive;
+// font-family: 'Nanum Gothic Coding', monospace;
+
+// ------------------------------------------
+// Typography
+// ------------------------------------------
+body {font-family: $mono;}
+@include headings() {font-family: $serif;}
+
+ul {
+  list-style: none;
+}
+
+@include headings() {
+    + * {margin-top: $base_x_2;}
+}
