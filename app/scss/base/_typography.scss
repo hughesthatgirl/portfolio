@@ -4,13 +4,33 @@
 // ------------------------------------------
 // Typography
 // ------------------------------------------
-body {font-family: $mono;}
-@include headings() {font-family: $serif;}
+body {font-family: $mono; font-size: 1em;}
 
-ul {
-  list-style: none;
+p {
+    line-height: 1.4;
 }
 
 @include headings() {
-    + * {margin-top: $base_x_2;}
+    font-family: $serif;
+    line-height: 1.2;
 }
+
+ul {
+    list-style: none;
+  }
+
+  .logo {
+      font-size: 4.6875rem; //75px
+  }
+
+  @include headings(2){
+      font-size: 3.75rem; //60px
+  }
+
+  @include headings(3){
+      font-size: 1.5625rem; //25px;
+  }
+
+  @include headings(3,6) {
+      font-style: italic;
+  }

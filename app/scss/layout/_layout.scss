@@ -20,6 +20,12 @@
         > * + * {
             margin-top: $base_x_3;
         }
+
+        @include headings()  {
+            + * {
+                margin-top: $base_x_2;
+            }
+        }
     }
 
     &-standard-list {

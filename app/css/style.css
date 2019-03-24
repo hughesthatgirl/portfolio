@@ -43,46 +43,80 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "Nanum Gothic Coding", monospace; }
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 1em; }
+
+p {
+  line-height: 1.4; }
 
 h1 {
-  font-family: "Berkshire Swash", cursive; }
+  font-family: "Suez One", serif;
+  line-height: 1.2; }
 
 h2 {
-  font-family: "Berkshire Swash", cursive; }
+  font-family: "Suez One", serif;
+  line-height: 1.2; }
 
 h3 {
-  font-family: "Berkshire Swash", cursive; }
+  font-family: "Suez One", serif;
+  line-height: 1.2; }
 
 h4 {
-  font-family: "Berkshire Swash", cursive; }
+  font-family: "Suez One", serif;
+  line-height: 1.2; }
 
 h5 {
-  font-family: "Berkshire Swash", cursive; }
+  font-family: "Suez One", serif;
+  line-height: 1.2; }
 
 h6 {
-  font-family: "Berkshire Swash", cursive; }
+  font-family: "Suez One", serif;
+  line-height: 1.2; }
 
 ul {
   list-style: none; }
 
-h1 + * {
-  margin-top: calc(8px * 2); }
+.logo {
+  font-size: 4.6875rem; }
 
-h2 + * {
-  margin-top: calc(8px * 2); }
+h2 {
+  font-size: 3.75rem; }
 
-h3 + * {
-  margin-top: calc(8px * 2); }
+h3 {
+  font-size: 3.75rem; }
 
-h4 + * {
-  margin-top: calc(8px * 2); }
+h4 {
+  font-size: 3.75rem; }
 
-h5 + * {
-  margin-top: calc(8px * 2); }
+h5 {
+  font-size: 3.75rem; }
 
-h6 + * {
-  margin-top: calc(8px * 2); }
+h6 {
+  font-size: 3.75rem; }
+
+h3 {
+  font-size: 1.5625rem; }
+
+h4 {
+  font-size: 1.5625rem; }
+
+h5 {
+  font-size: 1.5625rem; }
+
+h6 {
+  font-size: 1.5625rem; }
+
+h3 {
+  font-style: italic; }
+
+h4 {
+  font-style: italic; }
+
+h5 {
+  font-style: italic; }
+
+h6 {
+  font-style: italic; }
 
 .layout-spacer {
   padding-top: calc(8px * 4);
@@ -100,6 +134,24 @@ h6 + * {
 
 .layout-container > * + * {
   margin-top: calc(8px * 3); }
+
+.layout-container h1 + * {
+  margin-top: calc(8px * 2); }
+
+.layout-container h2 + * {
+  margin-top: calc(8px * 2); }
+
+.layout-container h3 + * {
+  margin-top: calc(8px * 2); }
+
+.layout-container h4 + * {
+  margin-top: calc(8px * 2); }
+
+.layout-container h5 + * {
+  margin-top: calc(8px * 2); }
+
+.layout-container h6 + * {
+  margin-top: calc(8px * 2); }
 
 .layout-standard-list li + li {
   margin-top: 8px; }
