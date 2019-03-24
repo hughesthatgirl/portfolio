@@ -10,7 +10,7 @@ var autoprefixer = require('gulp-autoprefixer');
 // Sass
 // ------------------------------------------
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
+  return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
     .pipe(autoprefixer({
       browsers: ['last 2 versions', '> 2%', 'safari >= 7'],
