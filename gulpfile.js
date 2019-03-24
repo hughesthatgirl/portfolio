@@ -1,28 +1,20 @@
 // Gulp.js configuration
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var cssnano = require('gulp-cssnano');
 var browserSync = require('browser-sync').create();
+var data = require('gulp-data');
 var autoprefixer = require('gulp-autoprefixer');
 
-var supported = [
-  'last 2 versions',
-  '> 2%',
-  'safari >= 7',
-  'ie >= 9',
-  'ff >= 15',
-  'ios 6',
-  'android 4'
-];
 
 // ------------------------------------------
 // Sass
 // ------------------------------------------
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass())
-    .pipe(cssnano({
-      autoprefixer: {browsers: supported, add: true}
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions', '> 2%', 'safari >= 7'],
+      cascade: false
     }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
@@ -31,15 +23,15 @@ gulp.task('sass', function() {
 });
 
 // ------------------------------------------
-// BrowserSync - Page Reload
+// Static Server - Page Reload
 // ------------------------------------------
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: 'app'
     },
-  })
-})
+  });
+});
 
 // ------------------------------------------
 // Watch Tasks

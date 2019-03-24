@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughesthatgirl/portfolio.git"
+  },
+  "author": "Joanna Hughes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hughesthatgirl/portfolio/issues"
+  },
+  "homepage": "https://github.com/hughesthatgirl/portfolio#readme",
+  "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-data": "^1.3.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-task": "^2.1.0"
+  }
+}
