@@ -2,7 +2,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
-var data = require('gulp-data');
 var autoprefixer = require('gulp-autoprefixer');
 
 // ------------------------------------------
