@@ -1,23 +1,33 @@
 // Gulp.js configuration
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var cssnano = require('gulp-cssnano');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
+
+var supported = [
+  'last 2 versions',
+  '> 2%',
+  'safari >= 7',
+  'ie >= 9',
+  'ff >= 15',
+  'ios 6',
+  'android 4'
+];
 
 // ------------------------------------------
 // Sass
 // ------------------------------------------
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss
+  return gulp.src('app/scss/**/*.scss')
     .pipe(sass())
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions', '> 2%', 'safari >= 7'],
-      cascade: false
+    .pipe(cssnano({
+      autoprefixer: {browsers: supported, add: true}
     }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 // ------------------------------------------
