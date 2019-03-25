@@ -14,10 +14,10 @@
 
     &-container {
         + .layout-container {
-            margin-top: $base_x_3;
+            margin-top: $base_x_5;
         }
 
-        > * + * {
+         * + * {
             margin-top: $base_x_3;
         }
 
@@ -29,6 +29,10 @@
     }
 
     &-standard-list {
+        li {
+            margin-left: $base_x_2;
+            list-style-type: square;
+        }
         li + li {
             margin-top: $base_spacing;
         }

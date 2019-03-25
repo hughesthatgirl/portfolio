@@ -51,27 +51,33 @@ p {
 
 h1 {
   font-family: "Suez One", serif;
-  line-height: 1.2; }
+  line-height: 1.2;
+  overflow-wrap: break-word; }
 
 h2 {
   font-family: "Suez One", serif;
-  line-height: 1.2; }
+  line-height: 1.2;
+  overflow-wrap: break-word; }
 
 h3 {
   font-family: "Suez One", serif;
-  line-height: 1.2; }
+  line-height: 1.2;
+  overflow-wrap: break-word; }
 
 h4 {
   font-family: "Suez One", serif;
-  line-height: 1.2; }
+  line-height: 1.2;
+  overflow-wrap: break-word; }
 
 h5 {
   font-family: "Suez One", serif;
-  line-height: 1.2; }
+  line-height: 1.2;
+  overflow-wrap: break-word; }
 
 h6 {
   font-family: "Suez One", serif;
-  line-height: 1.2; }
+  line-height: 1.2;
+  overflow-wrap: break-word; }
 
 ul {
   list-style: none; }
@@ -130,9 +136,9 @@ h6 {
   margin: 0 auto; }
 
 .layout-container + .layout-container {
-  margin-top: calc(8px * 3); }
+  margin-top: calc(8px * 5); }
 
-.layout-container > * + * {
+.layout-container * + * {
   margin-top: calc(8px * 3); }
 
 .layout-container h1 + * {
@@ -152,6 +158,10 @@ h6 {
 
 .layout-container h6 + * {
   margin-top: calc(8px * 2); }
+
+.layout-standard-list li {
+  margin-left: calc(8px * 2);
+  list-style-type: square; }
 
 .layout-standard-list li + li {
   margin-top: 8px; }

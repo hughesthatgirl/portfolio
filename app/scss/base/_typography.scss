@@ -13,6 +13,7 @@ p {
 @include headings() {
     font-family: $serif;
     line-height: 1.2;
+    overflow-wrap: break-word;
 }
 
 ul {
