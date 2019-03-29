@@ -79,6 +79,17 @@ h6 {
   line-height: 1.2;
   overflow-wrap: break-word; }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+  display: inline-block; }
+  a:visited {
+    color: #363537; }
+  a:hover {
+    text-decoration: none; }
+  a:active {
+    border: 2px dotted #fffef4; }
+
 ul {
   list-style: none; }
   ul.vertical-list > li + li {

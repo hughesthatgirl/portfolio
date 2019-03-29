@@ -16,6 +16,24 @@ p {
     overflow-wrap: break-word;
 }
 
+a {
+    color: inherit;
+    text-decoration: underline;
+    display: inline-block;
+
+    &:visited {
+        color: color(gray);
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active {
+        border: 2px dotted color(white);
+    }
+}
+
 ul {
     list-style: none;
 
