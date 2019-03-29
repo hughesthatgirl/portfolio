@@ -171,14 +171,19 @@ h6 {
   width: 100%; }
   @media only screen and (min-width: 26.526em) {
     .header {
-      height: 308px; } }
+      height: 314px; } }
   .header-fixed {
     position: fixed;
     height: auto;
-    width: 100%; }
+    width: 100%;
+    opacity: 0.9; }
 
 .footer {
   text-align: right; }
+
+.resume-body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d63043), color-stop(#ffa13e), to(#ff6f59));
+  background: linear-gradient(#d63043, #ffa13e, #ff6f59); }
 
 .background--pink {
   background-color: #d63043; }

@@ -8,12 +8,13 @@
     width: 100%;
 
     @media only screen and (min-width: 26.526em){
-        height: 308px;
+        height: 314px;
     }
 
     &-fixed {
         position: fixed;
         height: auto;
         width: 100%;
+        opacity: 0.9;
     }
 };
