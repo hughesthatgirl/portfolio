@@ -1,0 +1,19 @@
+// ------------------------------------------
+//  HEADER STYLES
+//  .header
+// ------------------------------------------
+.header {
+    text-align: right;
+    height: 336px;
+    width: 100%;
+
+    @media only screen and (min-width: 26.526em){
+        height: 308px;
+    }
+
+    &-fixed {
+        position: fixed;
+        height: auto;
+        width: 100%;
+    }
+};

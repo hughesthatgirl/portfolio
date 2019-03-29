@@ -17,7 +17,7 @@ p {
 }
 
 ul {
-    list-style: square;
+    list-style: none;
 
     &.vertical-list {
         > li + li {
@@ -29,6 +29,10 @@ ul {
         > li + li {
             margin-left: $base_spacing;
         }
+    }
+
+    &.bullets {
+        list-style: square;
     }
   }
 

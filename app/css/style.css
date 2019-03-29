@@ -80,11 +80,13 @@ h6 {
   overflow-wrap: break-word; }
 
 ul {
-  list-style: square; }
+  list-style: none; }
   ul.vertical-list > li + li {
     margin-top: 8px; }
   ul.horizontal-list > li + li {
     margin-left: 8px; }
+  ul.bullets {
+    list-style: square; }
 
 .logo {
   font-size: 4.6875rem; }
@@ -142,7 +144,7 @@ h6 {
 .layout-container + .layout-container {
   margin-top: calc(8px * 5); }
 
-.layout-container > * + * {
+.layout-container * + * {
   margin-top: calc(8px * 3); }
 
 .layout-container h1 + * {
@@ -162,6 +164,21 @@ h6 {
 
 .layout-container h6 + * {
   margin-top: calc(8px * 2); }
+
+.header {
+  text-align: right;
+  height: 336px;
+  width: 100%; }
+  @media only screen and (min-width: 26.526em) {
+    .header {
+      height: 308px; } }
+  .header-fixed {
+    position: fixed;
+    height: auto;
+    width: 100%; }
+
+.footer {
+  text-align: right; }
 
 .background--pink {
   background-color: #d63043; }
