@@ -1,7 +1,7 @@
 // ------------------------------------------
 // Color Map
 //
-// Example: {color: color(pink);}
+// Example: element {color: color(pink);}
 // ------------------------------------------
 @function color($color){
     @if map-has-key($colors, $color){

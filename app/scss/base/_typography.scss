@@ -17,7 +17,19 @@ p {
 }
 
 ul {
-    list-style: none;
+    list-style: square;
+
+    &.vertical-list {
+        > li + li {
+            margin-top: $base_spacing;
+        }
+    }
+
+    &.horizontal-list {
+        > li + li {
+            margin-left: $base_spacing;
+        }
+    }
   }
 
   .logo {
